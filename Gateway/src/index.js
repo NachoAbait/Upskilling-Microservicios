@@ -1,8 +1,14 @@
 const express = require("express");
 const { createProxyMiddleware } = require("http-proxy-middleware");
 const morgan = require("morgan");
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
+
+app.use(cors({
+  origin: 'http://localhost:3000'
+}));
 
 app.use(morgan("dev"));
 
