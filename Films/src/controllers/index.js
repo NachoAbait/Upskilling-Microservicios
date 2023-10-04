@@ -1,3 +1,4 @@
 module.exports = {
-    getFilms : require("./getFilms")
-}
+  getFilms: require("./getFilms"),
+  getFilm: require("./getFilm"),
+};

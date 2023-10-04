@@ -14,7 +14,6 @@ router.get("/:model", validateModel, async (req, res) => {
 
 router.get("/:model/:id", validateModel, async (req, res) => {
   const { model, id } = req.params;
-  console.log("llegue", id);
 
   const response = await store[model].get(id);
   res.status(200).json(response);

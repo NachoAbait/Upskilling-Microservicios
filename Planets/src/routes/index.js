@@ -5,4 +5,6 @@ const router = Router();
 
 router.get("/", controllers.getPlanets);
 
+router.get("/:id", controllers.getPlanet);
+
 module.exports = router;
